@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" data-theme="aqua" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="public/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles/output.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <title>Portfolio</title>
+</head>
+
+<body>
+  
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="#">Peter Parker</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 mt-3 ">
+        
+        <li> <a class="tooltip mr-3 " href="index.html#info" data-tip="Details">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a></li>
+        <li>
+          <div class="mr-3">
+            <a href="index.html#info2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#info3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smile-plus"><path d="M22 11v1a10 10 0 1 1-9-10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/><path d="M16 5h6"/><path d="M19 2v6"/></svg>
+          </a>
+        </li>
+      </ul>
+      
+
+    </div>
+  </div>
+  
+  <div
+  class="hero min-h-screen"
+  style="background-image: url(spiderman.jpeg);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold text-white">With Great Power Comes Great Responsiblity</h1>
+      
+    </div>
+  </div>
+</div>
+<div class="relative">
+  <div class="absolute top-0 left-20 transform -translate-x-1/2 flex flex-col items-center">
+    <div class="w-0.5 h-96 bg-black"></div>
+    <div class="w-0.5 h-96 bg-black"></div>
+  
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bug">
+        <path d="m8 2 1.88 1.88"/>
+        <path d="M14.12 3.88 16 2"/>
+        <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/>
+        <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/>
+        <path d="M12 20v-9"/>
+        <path d="M6.53 9C4.6 8.8 3 7.1 3 5"/>
+        <path d="M6 13H2"/>
+        <path d="M3 21c0-2.1 1.7-3.9 3.8-4"/>
+        <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/>
+        <path d="M22 13h-4"/>
+        <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
+      </svg>
+    </div>
+  </div>
+</div>  
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+      class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">All you need to Know about me </h1>
+      <p class="py-6 text-xl" id="info">
+        Hey there! I’m your friendly neighborhood Spider-Man, but you can call me Spidey. My real name? Peter Parker. I’m just a regular guy, juggling college life, relationships, and, oh yeah—being a superhero.
+      </p>
+      <h1 class="text-4xl font-bold">How It All Started</h1>
+      <p class="py-6 text-xl" id="info">
+        One fateful day, during a school field trip to a science lab, a radioactive spider bit me, and boom—everything changed. Suddenly, I had superhuman strength, agility, and the ability to cling to walls. Oh, and web-slinging? That came later, after I invented my web-shooters. Yeah, I’m a bit of a science nerd.
+      </p>
+      <h1 class="text-4xl font-bold">The Powers</h1>
+      <p class="py-6 text-xl" id="info">
+        I got some pretty cool tricks up my sleeve:
+
+        Super Strength: I can lift cars, punch through walls, and take down baddies twice my size.
+        Wall-Crawling: I stick to any surface, letting me climb skyscrapers or sneak around unnoticed.
+        Spider-Sense: It's like a sixth sense. I can feel danger before it happens, which helps me dodge attacks.
+        Web-Shooters: These bad boys help me swing from building to building and capture enemies in webbing. I made them myself using my science smarts.
+      </p>
+
+    </div>
+  </div>
+</div>
+<!-- horizontal scale -->
+<div class="flex items-center justify-between w-full h-1 bg-gray-300"></div>
+<div class="relative">
+
+
+    
+  
+  <div class="absolute top-0 left-20 transform -translate-x-1/2 flex flex-col items-center">
+    <div class="w-0.5 h-96 bg-black"></div>
+    <div class="w-0.5 h-80 bg-black"></div>
+  
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bug">
+        <path d="m8 2 1.88 1.88"/>
+        <path d="M14.12 3.88 16 2"/>
+        <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/>
+        <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/>
+        <path d="M12 20v-9"/>
+        <path d="M6.53 9C4.6 8.8 3 7.1 3 5"/>
+        <path d="M6 13H2"/>
+        <path d="M3 21c0-2.1 1.7-3.9 3.8-4"/>
+        <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/>
+        <path d="M22 13h-4"/>
+        <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
+      </svg>
+    </div>
+  </div>
+</div>  
+
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img
+      src="greengoblin.jpeg"
+      class="max-w-sm w-96 rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">The Villains</h1>
+      <p class="py-6 text-2xl" id="info2">
+        From street-level thugs to superpowered foes, I’ve got my hands full. Some of my most notorious enemies include:
+        <ul class="py-6 text-2xl ml-10">
+        <li class="list-disc"><h3 class="font-bold"> Green Goblin (Norman Osborn):</h3> A twisted genius and one of my biggest enemies. He's got gadgets, bombs, and a personal vendetta against me.</li>
+        <li class="list-disc"><h3 class="font-bold">Doctor Octopus (Otto Octavius): With those mechanical tentacles, Doc Ock is a force to be reckoned witVenom:</h3> This alien symbiote bonded with Eddie Brock and turned into one of my deadliest foes.</li>
+        <li class="list-disc"><h3 class="font-bold">The Sinister Six:</h3> A team of supervillains who gang up to take me down, and trust me, they never make it easy</li>
+      </ul>
+      </p>
+    </div>
+  </div> 
+
+</div>
+<!-- horizontal scale -->
+<div class="flex items-center justify-between w-full h-1 bg-gray-300"></div>
+<div class="relative">
+
+
+    
+  
+  <div class="absolute top-0 left-20 transform -translate-x-1/2 flex flex-col items-center">
+    <div class="w-0.5 h-96 bg-black"></div>
+    <div class="w-0.5 h-80 bg-black"></div>
+  
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bug">
+        <path d="m8 2 1.88 1.88"/>
+        <path d="M14.12 3.88 16 2"/>
+        <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/>
+        <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/>
+        <path d="M12 20v-9"/>
+        <path d="M6.53 9C4.6 8.8 3 7.1 3 5"/>
+        <path d="M6 13H2"/>
+        <path d="M3 21c0-2.1 1.7-3.9 3.8-4"/>
+        <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/>
+        <path d="M22 13h-4"/>
+        <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
+      </svg>
+    </div>
+  </div>
+</div>  
+
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img
+      src="miles.jpeg"
+      class="max-w-sm w-44  rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">Some Key Spider-People Across the Multiverse:</h1>
+      <p class="py-6 text-2xl " id="info3">
+        
+        <ul class="py-6 text-2xl ml-10">
+        <li class="list-disc"> <h3 class="font-bold">Peter Parker (The Classic):</h3> That’s me, your original Spider-Man from Earth-616. But in other universes, things change drastically.</li>
+        <li class="list-disc"><h3 class="font-bold">Miles Morales:</h3> In an alternate universe (Earth-1610), Miles takes over the role after his world’s Peter Parker dies. Miles has his own unique powers like invisibility and venom blasts. He's a fresh, young Spider-Man with a big heart.</li>
+        <li class="list-disc"><h3 class="font-bold">Spider-Gwen (Gwen Stacy):</h3> In her universe (Earth-65), she got bit by the radioactive spider instead of me. She becomes Spider-Woman, or Spider-Gwen, and fights her own battles while rocking a sleek white-and-pink suit.</li>
+        <li class="list-disc"><h3 class="font-bold">Spider-Man Noir:</h3> This is a gritty, 1930s detective version of Spider-Man from a dark, black-and-white universe (Earth-90214). He fights crime in the shadows, solving cases with a darker, more noir style.</li>
+        li class="list-disc"><h3 class="font-bold">Spider-Ham (Peter Porker):</h3> In the universe of Earth-8311, Peter Porker is a spider bitten by a radioactive pig. He’s a cartoonish, fun-loving Spider-Ham who fights crime with a sense of humor.</li>
+        <li class="list-disc"><h3 class="font-bold">Peni Parker & SP//dr:</h3> In a futuristic anime-like universe (Earth-14512), Peni Parker operates a robotic suit called SP//dr. She’s a teenager with a psychic link to the robot, and she brings a whole new flavor to the Spider-Verse.</li>
+        <li class="list-disc"><h3 class="font-bold">Spider-Man 2099 (Miguel O'Hara):</h3> In the future (Earth-928), Miguel O’Hara is a brilliant scientist who ends up with spider-like abilities through a genetic experiment. His suit and tech are way ahead of mine.</li>
+      </ul>
+      </p>
+      
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
+
+
