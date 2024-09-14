@@ -1443,16 +1443,8 @@ html {
   margin-top: 0.75rem;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-1 {
@@ -1524,10 +1516,6 @@ html {
   list-style-type: disc;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1538,10 +1526,6 @@ html {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .scroll-smooth {
@@ -1572,26 +1556,8 @@ html {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-neutral {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.fill-current {
-  fill: currentColor;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .p-10 {
@@ -1610,10 +1576,6 @@ html {
 
 .text-center {
   text-align: center;
-}
-
-.font-sans {
-  font-family: Montserrat, sans-serif;
 }
 
 .text-2xl {
@@ -1640,10 +1602,6 @@ html {
   font-weight: 700;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
@@ -1652,11 +1610,6 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-primary-content {
-  --tw-text-opacity: 1;
-  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
 
 .shadow-2xl {
@@ -1670,16 +1623,6 @@ body {
   font-family: Montserrat, sans-serif;
   /* This applies the Montserrat font defined in config */
   overflow-x: hidden;
-}
-
-@media (min-width: 768px) {
-  .md\:place-self-center {
-    place-self: center;
-  }
-
-  .md\:justify-self-end {
-    justify-self: end;
-  }
 }
 
 @media (min-width: 1024px) {
