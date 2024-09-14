@@ -1,3 +1,29 @@
+<!-- 
+
+This HTML file represents a portfolio webpage for Spider-Man (Peter Parker). It uses Tailwind CSS for styling and includes animations, SVG icons, and interactive elements. The page is structured as follows:
+
+1. Head Section:
+  - Sets the document type and language.
+  - Includes meta tags for character set and viewport settings.
+  - Links to favicon and stylesheets (local and CDN-hosted Tailwind CSS).
+  - Defines custom CSS for animations.
+
+2. Body Section:
+  - Navbar: Contains navigation links and SVG icons with tooltips.
+  - Hero Section: Features a background image and a motivational quote.
+  - Rope Animation: Displays an animated rope with an SVG bug icon.
+  - Content Sections: 
+    - "All you need to Know about me": Introduction to Spider-Man.
+    - "How It All Started": Origin story of Spider-Man.
+    - "The Powers": Description of Spider-Man's abilities.
+    - "The Villains": Information about Spider-Man's enemies.
+    - "Some Key Spider-People Across the Multiverse": Details about other Spider-People.
+  - Footer: Contains a footer with an SVG icon and a tagline.
+  - Audio: Background music with play and pause controls.
+
+3. Scripts:
+  - JavaScript to handle play and pause functionality for background music.
+-->
 <!doctype html>
 <html lang="en" data-theme="aqua" class="scroll-smooth">
 
@@ -61,6 +87,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smile-plus"><path d="M22 11v1a10 10 0 1 1-9-10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/><path d="M16 5h6"/><path d="M19 2v6"/></svg>
           </a>
         </li>
+        <li>
+        <button  id="volume-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-2">
+              <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+              <path d="M16 9a5 5 0 0 1 0 6"/>
+              <path d="M19.364 18.364a9 9 0 0 0 0-12.728"/>
+          </svg>
+          </button>
+        </li>
+          <li>
+          <button id="volume-x" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-x">
+              <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+              <line x1="22" x2="16" y1="9" y2="15"/>
+              <line x1="16" x2="22" y1="9" y2="15"/>
+          </svg></button>
+        </li>
+        
       </ul>
       
 
@@ -127,7 +171,7 @@
     </div>
   </div>
 </div>
-<!-- horizontal scale -->
+
 <div class="flex items-center justify-between w-full h-1 bg-gray-300"></div>
 <div class="relative" id="rope">
 
@@ -175,7 +219,7 @@
   </div> 
 
 </div>
-<!-- horizontal scale -->
+
 <div class="flex items-center justify-between w-full h-1 bg-gray-300"></div>
 <div class="relative" id="rope">
 
@@ -250,12 +294,24 @@
     </p>
   </aside>
 </footer>
-<audio  id="myAudio"  autoplay loop>
+<audio  id="background-music"   loop>
   <source src="song.mp3" type="audio/mpeg">
-  <!-- <source src="song.ogg" type="audio/ogg"> -->
   Your browser does not support the audio element.
 </audio>
 
+
+
+<script>
+  //  id="volume-2" on clicking this button the volume will start playing
+  document.getElementById("volume-2").addEventListener("click", function(){
+    document.getElementById("background-music").play();
+  });
+
+  //  id="volume-x" on clicking this button the volume will stop playing
+  document.getElementById("volume-x").addEventListener("click", function(){
+    document.getElementById("background-music").pause();
+  });
+</script>
 </html>
 
 
